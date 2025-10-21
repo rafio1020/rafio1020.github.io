@@ -4,99 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Md. Redwan Bhuiyan Rafio | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background: #f7f9fc;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1rem;
-      color: #dce6f7;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
-      background: white;
-      border-radius: 10px;
-      padding: 1.5rem 2rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004aad;
-      border-bottom: 2px solid #004aad;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style-type: none;
-    }
-    li {
-      margin-bottom: 0.6rem;
-    }
-    a {
-      color: #004aad;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact {
-      margin-top: 1rem;
-    }
-    .contact a {
-      margin-right: 1rem;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #004aad;
-      color: white;
-      margin-top: 2rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
   <header>
-    <h1>Md. Redwan Bhuiyan Rafio</h1>
-    <p>Educator • Problem Solver • CSE Student @ RUET</p>
-    <div class="contact">
-      <a href="mailto:rafio.work.2002@gmail.com">✉ rafio.work.2002@gmail.com</a>
-      <a href="tel:+8801833478113">📞 +8801833478113</a>
-      <a href="https://linkedin.com/in/rafio1020/">LinkedIn</a>
-      <a href="https://github.com/rafio1020/">GitHub</a>
+    <div class="container header-content">
+      <div>
+        <h1>Md. Redwan Bhuiyan Rafio</h1>
+        <p>Educator • Problem Solver • CSE Student @ RUET</p>
+      </div>
+      <div class="contact">
+        <a href="mailto:rafio.work.2002@gmail.com">✉ Email</a>
+        <a href="tel:+8801833478113">📞 Phone</a>
+        <a href="https://linkedin.com/in/rafio1020/">LinkedIn</a>
+        <a href="https://github.com/rafio1020/">GitHub</a>
+      </div>
     </div>
   </header>
 
-  <div class="container">
-
-    <section>
+  <main class="container">
+    <section id="summary">
       <h2>Summary</h2>
       <p>
         Passionate educator and problem solver with hands-on experience in programming, computational thinking, and curriculum development.
@@ -105,7 +32,7 @@
       </p>
     </section>
 
-    <section>
+    <section id="skills">
       <h2>Skills</h2>
       <ul>
         <li><b>Languages:</b> Python, C, C++, C#, Java</li>
@@ -116,51 +43,74 @@
       </ul>
     </section>
 
-    <section>
+    <section id="experience">
       <h2>Experience</h2>
-      <ul>
-        <li><b>Bangladesh Mathematical Olympiad</b> (Oct 2022 – Present)  
-          Academic Team Member — Designed and evaluated mathematical & computational problems nationwide.</li>
-        <li><b>RUET Cyber Security Club</b> (Dec 2024 – Present)  
-          CTF & Training Programs Lead — Led Capture the Flag (CTF) events and cybersecurity training programs.</li>
-        <li><b>Astronomy & Science Society of RUET</b> (Jun 2024 – Present)  
-          Assistant Secretary of Research & Planning — Organized the first Integration Bee at RUET.</li>
-        <li><b>BAF Shaheen College Dhaka Mathematics Club</b> (Dec 2020 – Mar 2022)  
-          Founder & General Secretary — Established and managed club activities promoting math excellence.</li>
-      </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>Bangladesh Mathematical Olympiad</h3>
+          <p><i>Oct 2022 – Present</i></p>
+          <p>Academic Team Member — Designed and evaluated complex mathematical and computational problems for nationwide competitions.</p>
+        </div>
+        <div class="card">
+          <h3>RUET Cyber Security Club</h3>
+          <p><i>Dec 2024 – Present</i></p>
+          <p>CTF & Training Programs Lead — Led Capture the Flag (CTF) events and cybersecurity training programs.</p>
+        </div>
+        <div class="card">
+          <h3>Astronomy & Science Society of RUET</h3>
+          <p><i>Jun 2024 – Present</i></p>
+          <p>Assistant Secretary of Research & Planning — Organized the first Integration Bee at RUET.</p>
+        </div>
+        <div class="card">
+          <h3>BAF Shaheen College Dhaka Mathematics Club</h3>
+          <p><i>Dec 2020 – Mar 2022</i></p>
+          <p>Founder & General Secretary — Established and managed club activities promoting math excellence.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section id="education">
       <h2>Education</h2>
       <ul>
-        <li><b>B.Sc. in Computer Science & Engineering</b> – Rajshahi University of Engineering & Technology (CGPA: 3.79/4.00)</li>
-        <li><b>Higher Secondary Certificate (Science)</b> – BAF Shaheen College Dhaka (GPA: 5.00/5.00)</li>
+        <li><b>B.Sc. in Computer Science & Engineering</b> — Rajshahi University of Engineering & Technology (CGPA: 3.79/4.00)</li>
+        <li><b>H.S.C (Science)</b> — BAF Shaheen College Dhaka (GPA: 5.00/5.00)</li>
       </ul>
     </section>
 
-    <section>
+    <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><b>Leap Quest:</b> <a href="https://github.com/rafio1020/LeapQuest">GitHub</a> — A 2D platformer game using Unity and C#.</li>
-        <li><b>Finance Tracker:</b> <a href="https://github.com/rafio1020/Finance-Tracker">GitHub</a> — Financial management application in C#.</li>
-        <li><b>Project Tersus:</b> Admin — Research on trans-boundary river pollution by microplastics.</li>
-      </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>Leap Quest</h3>
+          <a href="https://github.com/rafio1020/LeapQuest" target="_blank">GitHub Link</a>
+          <p>2D platformer game built with Unity and C#.</p>
+        </div>
+        <div class="card">
+          <h3>Finance Tracker</h3>
+          <a href="https://github.com/rafio1020/Finance-Tracker" target="_blank">GitHub Link</a>
+          <p>Financial management app in C# and Visual Studio.</p>
+        </div>
+        <div class="card">
+          <h3>Project Tersus</h3>
+          <p>Admin — Research on trans-boundary river pollution by microplastics and environmental awareness.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section id="workshops">
       <h2>Training & Workshops</h2>
       <ul>
         <li><b>Learnathon 3.0 (Geeky Solutions)</b> — Learned ASP.NET, project management & GitHub collaboration.</li>
-        <li><b>QBronze 157: Workshop on Quantum Computing</b> — Worked with Qiskit, Jupyter, and learned quantum operations.</li>
+        <li><b>QBronze 157:</b> Workshop on Quantum Computing — Worked with Qiskit, Jupyter, and quantum operations.</li>
       </ul>
     </section>
 
-    <section>
+    <section id="interests">
       <h2>Personal Interests</h2>
-      <p>Machine Learning, Cyber Security, Computer Vision, Pattern Recognition</p>
+      <p>Machine Learning • Cyber Security • Computer Vision • Pattern Recognition</p>
     </section>
 
-    <section>
+    <section id="awards">
       <h2>Awards & Achievements</h2>
       <ul>
         <li>Regional Champion — 19th Bangladesh Mathematical Olympiad</li>
@@ -169,20 +119,17 @@
       </ul>
     </section>
 
-    <section>
+    <section id="references">
       <h2>References</h2>
       <ul>
-        <li><b>Azmain Yakin Srizon</b> — Assistant Professor, Dept. of CSE, RUET  
-          <a href="mailto:azmainsrizon@gmail.com">azmainsrizon@gmail.com</a></li>
-        <li><b>Md. Sozib Hossain</b> — Lecturer & Course Advisor, Dept. of CSE, RUET  
-          <a href="mailto:sozibruet99@gmail.com">sozibruet99@gmail.com</a></li>
+        <li><b>Azmain Yakin Srizon</b> — Assistant Professor, Dept. of CSE, RUET — <a href="mailto:azmainsrizon@gmail.com">azmainsrizon@gmail.com</a></li>
+        <li><b>Md. Sozib Hossain</b> — Lecturer & Course Advisor, Dept. of CSE, RUET — <a href="mailto:sozibruet99@gmail.com">sozibruet99@gmail.com</a></li>
       </ul>
     </section>
-
-  </div>
+  </main>
 
   <footer>
-    © 2025 Md. Redwan Bhuiyan Rafio — All Rights Reserved
+    <p>© 2025 Md. Redwan Bhuiyan Rafio — All Rights Reserved</p>
   </footer>
 </body>
 </html>
